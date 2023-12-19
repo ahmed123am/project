@@ -1,0 +1,133 @@
+/* start global rules*/
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#2196f3;
+    --main-color-alt:#1787e0;
+    --main-transition:0.3s;
+    --main-padding-top:100px;
+    --main-padding-bottom:100px;
+    --section-background:#ececec;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+/* start container*/
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
+
+.container form{
+    padding: 10px;
+    margin: 60px auto;
+}
+.container form .input{
+    display: block;
+    width: 75%;
+    margin: 20px auto 10px;
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    caret-color: var(--main-color);
+}
+.container .buttons{
+    padding: 20px;
+    margin: 10px 100px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.container .buttons div{
+    background-color: #e8e8e8;
+    padding: 40px 60px;
+    border-right: 10px solid white;
+}
+h3 {
+    margin: 0 auto 40px;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+.container .buttons .k1,
+.container .buttons .k2{
+    display: block;
+    margin: 20px auto 10px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    caret-color: var(--main-color);
+}
+.container .buttons .k3,
+.container .buttons .k4{
+    width: 100px;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 10px 15px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    caret-color: var(--main-color);
+}
+.container .buttons span{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container .result{
+    background-color: #ddd;
+    margin: 30px auto;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    width: 35%;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1787e0;
+}
+
+@media(max-width:767px){
+    .container .buttons{
+        display: block;
+        padding: 20px;
+        margin: 10px;
+    }
+    .container .buttons div{
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+    .container .buttons .k1,
+    .container .buttons .k2{
+        margin: 10px auto;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        width: fit-content;
+    }
+    .container .buttons span{
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+}
