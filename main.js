@@ -141,6 +141,9 @@ btn5.addEventListener('click', (e) => {
     final.innerHTML=`${result.join("")}`;
     key3.value = key3.value.replace(key3.value,"");
     key4.value = key4.value.replace(key4.value,"");
+    if(gcd!=1){
+        final.innerHTML="gcd not equal 1 try again";
+    }
     }
 });
 
